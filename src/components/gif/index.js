@@ -6,13 +6,20 @@
 //     webp: 'https://media4.giphy.com/media/4HrBfVJJveBNS9ytSk/giphy.webp?cid=cb3f2bebpuo6jj0g5f9gfibjre2zzbb4yb1cfshtplanlrpw&rid=giphy.webp&ct=g',
 //   }
 
-const GifInfo = ({ gifSrc, title }) => {
-  return(
-    <div class="Gif-Info">
-    <img className="gambar" alt="gambar" src={gifSrc} />
-    <p>{title}</p>
-  </div>
-  )
+// const GifInfo = ({ gifSrc, title, ratingGif }) => {
+//   return(
+//     <div class="Gif-Info">
+//     <img className="gambar" alt="gambar" src={gifSrc} />
+//     <p>{title}</p>
+//     <p>{ratingGif}</p>
+//   </div>
+//   )
+// };
+
+// export default GifInfo;
+
+const Gif = ({ source, title }) => {
+  return <img src={source} alt={title} />;
 };
 
-export default GifInfo;
+export default Gif;
